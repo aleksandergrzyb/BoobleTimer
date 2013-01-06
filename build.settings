@@ -1,0 +1,61 @@
+
+settings =
+{
+	orientation =
+	{
+		default = "landscapeRight",
+		content = "landscapeRight",
+		supported =
+		{
+			"landscapeRight", 
+			"landscapeLeft",
+		},
+	},
+
+
+	iphone =
+	{
+		plist =
+		{
+			CFBundleDisplayName = "BoobleTimer",
+            MinimumOSVersion = "4.0",
+            UIStatusBarHidden = true,
+			UIPrerenderedIcon = true,
+            UIApplicationExitsOnSuspend = false,
+            
+			UIInterfaceOrientation = "UIInterfaceOrientationLandscapeRight",
+			
+			UISupportedInterfaceOrientations = 
+			{
+				"UIInterfaceOrientationLandscapeRight",
+				"UIInterfaceOrientationLandscapeLeft",
+			},
+			
+			UIAppFonts = 
+			{},
+           
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles = 
+			{
+				"Icon.png",
+				"Icon@2x.png",
+				"Icon-Small@2x.png",
+				"Icon-72.png",
+				"Icon-Small-50.png",
+				"Icon-Small.png",
+				"Icon-64.png",
+				"Icon-32.png",
+				"Icon-24.png",
+				"Icon-16.png",
+			},
+		},
+	},
+}
+
+settings.iphone.plist["CFBundleShortVersionString"] = 1.0
+settings.iphone.plist["UIInterfaceOrientation~ipad"] = "UIInterfaceOrientationLandscapeRight"
+settings.iphone.plist["UISupportedInterfaceOrientations~ipad"] = 
+{
+    "UIInterfaceOrientationLandscapeRight",
+    "UIInterfaceOrientationLandscapeLeft",
+}
